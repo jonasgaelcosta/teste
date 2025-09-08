@@ -10,7 +10,7 @@
 
 body {
     font-size: 1rem;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--preto-espaco);
     color: var(--cinza-claro);
 }
@@ -37,7 +37,8 @@ section {
 
 /* Seção inicial */
 .inicio-fundo {
-    background-image: url('img/espaco-fundo.jpg'); /* substitua pela imagem espacial */
+    position: relative; /* Corrigido */
+    background-image: url('./img/espaco-fundo.jpg'); /* Corrigido caminho */
     background-size: cover;
     background-position: center;
     border-radius: 80px;
@@ -73,6 +74,7 @@ section {
     height: 3em;
     font-weight: bold;
     transition: 0.3s;
+    cursor: pointer; /* Corrigido */
 }
 
 .botao-inicio:hover {
@@ -124,7 +126,7 @@ section {
 
 /* Contato */
 #contato {
-    background-image: url('img/espaco-fundo.jpg');
+    background-image: url('./img/espaco-fundo.jpg'); /* Corrigido caminho */
     background-size: cover;
     padding: 4rem 0;
 }
@@ -144,6 +146,7 @@ section {
     font-weight: bold;
     color: var(--preto-espaco);
     transition: 0.3s;
+    cursor: pointer; /* Corrigido */
 }
 
 .formulario button:hover {
@@ -180,6 +183,8 @@ section {
     margin-bottom: 5px;
     background-color: var(--roxo-espaco);
     border: none;
+    color: white; /* Corrigido */
+    cursor: pointer; /* Corrigido */
 }
 
 .opcoes-acessibilidade button:hover {
